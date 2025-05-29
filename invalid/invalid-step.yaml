@@ -1,0 +1,10 @@
+steps:
+  - name: hello-world
+    template: print-message
+  - template: print-message
+
+templates:
+  - name: print-message
+    inlineScript: |
+      #!/bin/sh
+      echo "Hello, Argo Workflows!"
